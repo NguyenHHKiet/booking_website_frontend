@@ -1,9 +1,13 @@
+import Navbar from "../../components/navbar/Navbar";
+import RenderHomePage from "../../components/render/RenderHomePage";
+
 const Home = () => {
-	return (
-		<div>
-			<h1>Home Page</h1>
-		</div>
-	);
+    return (
+        <div>
+            <Navbar />
+            <RenderHomePage />
+        </div>
+    );
 };
 
 export default Home;

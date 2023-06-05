@@ -1,0 +1,42 @@
+.nav {
+    background-color: #003580;
+    color: white;
+    padding: 0.5rem 0;
+    &__btn {
+        padding: 0.25rem;
+        color: #5186a2;
+    }
+    &__gap{
+        gap: 0.75rem;
+    }
+    &__submitted {
+        padding: 0.75rem;
+        background-color: #0071C2;
+        border: none;
+        color: white;
+        max-width: 8rem;
+    }
+}
+
+.search{
+    position: relative;
+    height: 1rem;
+    width: 100%;
+    form{
+        position: absolute;
+        background-color: white;
+        gap: 2rem;
+        color: black;
+        border: 0.25rem solid #FEC014;
+        border-radius: 0.5rem;
+        padding: 0.45rem 2rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input{
+        background: transparent;
+        border: 0;
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
