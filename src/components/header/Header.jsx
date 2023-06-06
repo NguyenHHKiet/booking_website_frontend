@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "../navbar/Navbar.module.scss";
-import global from "../../App.module.scss";
+import "../../App.scss";
 
 const Header = () => {
     const submittedHandle = () => {
@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <div>
             <div
-                className={[global.flex].join(" ")}
+                className={`flex`}
                 style={{
                     flexDirection: "column",
                     gap: "1.5rem",
@@ -27,28 +27,25 @@ const Header = () => {
             </div>
             <div className={styled.search} style={{ margin: "0.5rem 0" }}>
                 <form
-                    onSubmit={submittedHandle}
-                    className={[global.flex, global.flex__between].join(" ")}
+                    // onSubmit={submittedHandle}
+                    className={`flex flex__between`}
                 >
                     <input
                         placeholder="Where are you going?"
                         type="search"
                         name="searching"
-                        value=""
                     />
-                    <input
-                        placeholder="Date"
-                        type="date"
-                        name="search-date"
-                        value=""
-                    />
+                    <input placeholder="Date" type="date" name="search-date" />
                     <input
                         placeholder="People"
                         type="radio"
                         name="search-people"
-                        value=""
                     />
-                    <button className={styled.nav__submitted} type="submit">
+                    <button
+                        className={styled.nav__submitted}
+                        type="button"
+                        onClick={submittedHandle}
+                    >
                         Search
                     </button>
                 </form>

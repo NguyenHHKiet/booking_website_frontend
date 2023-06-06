@@ -1,12 +1,16 @@
+import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import RenderHomePage from "../../components/render/RenderHomePage";
+import Subscribe from "../../components/subscribe/Subscribe";
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Navbar />
             <RenderHomePage />
-        </div>
+            <Subscribe />
+            <Footer />
+        </>
     );
 };
 

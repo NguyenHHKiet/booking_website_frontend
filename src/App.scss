@@ -1,8 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 .container{
     max-width: 69rem;
     margin: 0 auto;
     padding: 0 1rem;
-    box-sizing: border-box;
 }
 
 ul, li{
@@ -18,6 +20,7 @@ ul, li{
     color: white;
     border-radius: 1rem;
     padding: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .flex {
@@ -27,4 +30,19 @@ ul, li{
 .flex__between {
     justify-content: space-between;
     align-items: center;
+}
+
+.py-3 {
+    padding: 3rem 0; 
+}
+.py-2{
+    padding: 2rem 0; 
+}
+.py-1{
+    padding: 1rem 0; 
+}
+
+.search-page{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
