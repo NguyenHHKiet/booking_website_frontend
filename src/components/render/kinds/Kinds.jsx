@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "./Kinds.module.scss";
-import types from "../../../data/type.json";
 
-const Kinds = () => {
+const Kinds = ({ types }) => {
     return (
         <div className={`py-1`}>
             <h1 className={`py-1`}>Browse by property type</h1>

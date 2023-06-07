@@ -2,10 +2,9 @@ import React from "react";
 import styled from "./Navbar.module.scss";
 import "../../App.scss";
 import NavBarItem from "./NavBarItem";
-import navBar from "../../data/navBar.json";
 import Header from "../header/Header";
 
-const Navbar = () => {
+const Navbar = ({ navBar, choice = "true" }) => {
     return (
         <div className={styled.nav}>
             <div className={`container`}>
@@ -21,7 +20,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <NavBarItem items={navBar} />
-                <Header />
+                {choice ? <Header /> : ""}
             </div>
         </div>
     );

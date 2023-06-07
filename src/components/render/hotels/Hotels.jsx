@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "./Hotel.module.scss";
-import hotelList from "../../../data/hotel_list.json";
 
-const Hotels = () => {
+const Hotels = ({ hotelList }) => {
     return (
         <div className={`py-1`}>
             <h1 className={`py-1`}>Homes guests love</h1>

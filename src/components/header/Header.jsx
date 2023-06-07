@@ -4,7 +4,7 @@ import "../../App.scss";
 
 const Header = () => {
     const submittedHandle = () => {
-        window.location.replace("http://localhost:3000/seach");
+        window.location.replace("http://localhost:3000/search");
     };
     return (
         <div>

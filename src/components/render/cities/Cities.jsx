@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "./Cities.module.scss";
-import cities from "../../../data/city.json";
 
-const Cities = () => {
+const Cities = ({ cities }) => {
     return (
         <ul className={`py-1 ${styled.cities}`}>
             {cities.map((city) => (

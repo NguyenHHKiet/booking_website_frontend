@@ -1,21 +1,21 @@
 import React from "react";
-import styled from "./InputSearch.module.scss";
+import styled from "./SearchPopup.module.scss";
 
-const InputSearch = () => {
+const SearchPopup = () => {
     return (
         <div className={styled.box} style={{ backgroundColor: "#FEBB02" }}>
             <h3>Search</h3>
             <section>
-                <form>
+                <form className={styled.box__form}>
                     <div>
-                        <label for="destination">Destination</label>
+                        <label htmlFor="destination">Destination</label>
                         <input type="text" name="destination" />
                         <br />
-                        <label for="check-in">Check-in Date</label>
+                        <label htmlFor="check-in">Check-in Date</label>
                         <input type="text" name="check-in" />
                     </div>
-                    <div className="options">
-                        <h6>Options</h6>
+                    <div className={styled.options}>
+                        <h5>Options</h5>
                         <div>
                             <p>Min price for night</p>
                             <input type="text" />
@@ -44,4 +44,4 @@ const InputSearch = () => {
     );
 };
 
-export default InputSearch;
+export default SearchPopup;

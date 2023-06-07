@@ -4,12 +4,12 @@ import Hotels from "./hotels/Hotels";
 import Kinds from "./kinds/Kinds";
 import "../../App.scss";
 
-const RenderHomePage = () => {
+const RenderHomePage = ({ cities, hotelList, types }) => {
     return (
         <div className={`container`} style={{ marginTop: "5rem" }}>
-            <Cities />
-            <Kinds />
-            <Hotels />
+            <Cities cities={cities} />
+            <Kinds types={types} />
+            <Hotels hotelList={hotelList} />
         </div>
     );
 };
