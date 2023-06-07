@@ -5,7 +5,7 @@ const SearchList = ({ search }) => {
     return (
         <div style={{ display: "grid", gap: "0.75rem" }}>
             {search.map((item) => (
-                <SearchListItem item={item} />
+                <SearchListItem key={item.name} item={item} />
             ))}
         </div>
     );
