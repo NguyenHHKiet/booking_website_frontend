@@ -10,7 +10,7 @@ import TYPES from "../../data/type.json";
 import NAVBAR from "../../data/navBar.json";
 import FOOTER from "../../data/footer.json";
 
-const Home = ({ choiceItem }) => {
+const Home = () => {
     const [navBar, setNavBar] = useState(NAVBAR);
     const [footer, setFooter] = useState(FOOTER);
 
@@ -25,7 +25,6 @@ const Home = ({ choiceItem }) => {
                 cities={cities}
                 hotelList={hotelList}
                 types={types}
-                choiceItem={choiceItem}
             />
             <Subscribe />
             <Footer footer={footer} />

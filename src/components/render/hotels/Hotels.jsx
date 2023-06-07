@@ -1,12 +1,9 @@
 import React from "react";
 import styled from "./Hotel.module.scss";
-import { useNavigate } from "react-router-dom";
 
-const Hotels = ({ hotelList, choiceItem }) => {
-    const navigation = useNavigate();
-    const choiceItemHandler = (item) => {
-        choiceItem(item);
-        navigation("/detail");
+const Hotels = ({ hotelList }) => {
+    const choiceItemHandler = () => {
+        window.location.replace("/detail");
     };
 
     return (
@@ -18,7 +15,7 @@ const Hotels = ({ hotelList, choiceItem }) => {
                         <div
                             key={item.name}
                             className={styled.cards}
-                            onClick={() => choiceItemHandler(item)}
+                            onClick={choiceItemHandler}
                         >
                             <img src={item.image_url} alt={item.name} />
                             <div className={styled["card-typo"]}>

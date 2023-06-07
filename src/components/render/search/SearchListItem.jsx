@@ -13,8 +13,8 @@ const SearchListItem = ({ item }) => {
                 <span className={styled.tag}>{item.tag}</span>
                 <h5>{item.description}</h5>
                 <p>{item.type}</p>
-                <h5 className={styled.green}>Free cancellation</h5>
-                <p className={styled.green}>
+                <h5 className="green">Free cancellation</h5>
+                <p className="green">
                     You can cancel later, so lock in this great price today!
                 </p>
             </div>
@@ -26,7 +26,9 @@ const SearchListItem = ({ item }) => {
                 <div>
                     <h1>$ {item.price}</h1>
                     <p style={{ opacity: "50%" }}>Includes taxes and fees</p>
-                    <button type="submit">See availability</button>
+                    <button className="reserve" type="submit">
+                        See availability
+                    </button>
                 </div>
             </div>
         </div>

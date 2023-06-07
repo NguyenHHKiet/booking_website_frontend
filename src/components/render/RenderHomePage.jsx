@@ -3,12 +3,12 @@ import Cities from "./cities/Cities";
 import Hotels from "./hotels/Hotels";
 import Kinds from "./kinds/Kinds";
 
-const RenderHomePage = ({ cities, hotelList, types, choiceItem }) => {
+const RenderHomePage = ({ cities, hotelList, types }) => {
     return (
         <div className={`container`} style={{ marginTop: "5rem" }}>
             <Cities cities={cities} />
             <Kinds types={types} />
-            <Hotels hotelList={hotelList} choiceItem={choiceItem} />
+            <Hotels hotelList={hotelList} />
         </div>
     );
 };
