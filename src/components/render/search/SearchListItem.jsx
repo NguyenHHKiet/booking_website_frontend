@@ -2,6 +2,9 @@ import React from "react";
 import styled from "./SearchListItem.module.scss";
 
 const SearchListItem = ({ item }) => {
+    const linkHandler = () => {
+        window.location.replace("/detail");
+    };
     return (
         <div className={`${styled.card}`}>
             <div className={styled.image}>
@@ -26,7 +29,11 @@ const SearchListItem = ({ item }) => {
                 <div>
                     <h1>$ {item.price}</h1>
                     <p style={{ opacity: "50%" }}>Includes taxes and fees</p>
-                    <button className="reserve" type="submit">
+                    <button
+                        className="reserve"
+                        type="button"
+                        onClick={linkHandler}
+                    >
                         See availability
                     </button>
                 </div>

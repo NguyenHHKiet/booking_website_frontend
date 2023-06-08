@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "./Navbar.module.scss";
-import "../../App.scss";
 
 const NavBarItem = ({ items }) => {
     return (
@@ -8,7 +7,7 @@ const NavBarItem = ({ items }) => {
             {items.map((item) => (
                 <li
                     key={item.type}
-                    className={`btn flex flex__between ${styled.nav__gap}`}
+                    className={`btn flex flex__between ${styled.nav__text} ${styled.nav__gap} ${styled.active}`}
                 >
                     <i className={`fa ${item.icon}`}></i>
                     {item.type}
