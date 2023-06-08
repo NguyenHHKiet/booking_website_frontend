@@ -18,26 +18,3 @@
         max-width: 8rem;
     }
 }
-
-.search {
-    position: relative;
-    height: 1rem;
-    width: 100%;
-    form {
-        position: absolute;
-        background-color: white;
-        gap: 2rem;
-        color: black;
-        border: 0.25rem solid #fec014;
-        border-radius: 0.5rem;
-        padding: 0.45rem 2rem;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    input {
-        background: transparent;
-        border: 0;
-        width: 100%;
-        padding: 0.5rem;
-    }
-}
