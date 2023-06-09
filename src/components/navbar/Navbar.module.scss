@@ -1,0 +1,40 @@
+.nav {
+    background-color: #003580;
+    color: white;
+    padding: 0.5rem 0;
+    &__btn {
+        padding: 0.25rem;
+        // margin: 1rem;
+        color: #5186a2;
+    }
+    &__gap {
+        gap: 0.75rem;
+    }
+    &__text {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__submitted {
+        padding: 0.75rem;
+        background-color: #0071c2;
+        border: none;
+        color: white;
+        max-width: 8rem;
+    }
+}
+
+.active:first-child {
+    border-radius: 1.5rem;
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__gap {
+        gap: 0.25rem;
+        font-size: 0.75rem;
+    }
+    .active:first-child {
+        border-radius: 1rem;
+    }
+}
