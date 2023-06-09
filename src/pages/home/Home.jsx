@@ -1,10 +1,12 @@
+import city from "../../data/city.json"
 
 const Home = () => {
-	return (
-		<div>
-			<h1>Home Page</h1>
-		</div>
-	);
-};
+    console.log(city)
+    return (
+        <div>
+            <h1>Home Page</h1>
+        </div>
+    )
+}
 
-export default Home;
+export default Home
