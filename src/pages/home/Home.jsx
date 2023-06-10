@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Navbar from "../../components/navbar/Navbar"
-// import RenderHomePage from "../../components/render/RenderHomePage"
+import RenderHomePage from "../../components/render/RenderHomePage"
 import Subscribe from "../../components/subscribe/Subscribe"
 import Footer from "../../components/footer/Footer"
 
@@ -21,11 +21,11 @@ const Home = () => {
     return (
         <>
             <Navbar navBar={navBar} />
-            {/* <RenderHomePage
+            <RenderHomePage
                 cities={cities}
                 hotelList={hotelList}
                 types={types}
-            /> */}
+            />
             <Subscribe />
             <Footer footer={footer} />
         </>

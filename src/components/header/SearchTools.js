@@ -15,6 +15,7 @@ const SearchTools = () => {
             key: "selection",
         },
     ])
+    console.log(date)
     const submittedHandle = () => {
         window.location.replace("/search")
     }

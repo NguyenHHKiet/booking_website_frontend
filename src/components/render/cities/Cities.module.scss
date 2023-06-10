@@ -1,0 +1,38 @@
+figure {
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    > * {
+        grid-area: 1/1;
+        transition: 0.4s;
+    }
+    figcaption {
+        display: grid;
+        align-items: end;
+        font-family: sans-serif;
+        font-size: 2.3rem;
+        font-weight: bold;
+        color: white;
+        padding: 0.75rem;
+        position: sticky;
+        position: -webkit-sticky;
+        padding: 1rem 1.5rem;
+    }
+    > img {
+        max-height: 16rem;
+        width: 100%;
+    }
+    &:hover img {
+        transform: scale(1.2);
+    }
+}
+
+.cities {
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: "center";
+    gap: 2rem;
+    overflow: hidden;
+}
